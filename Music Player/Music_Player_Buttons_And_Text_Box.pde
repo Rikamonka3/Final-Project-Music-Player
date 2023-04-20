@@ -115,11 +115,11 @@ void setup() {
   rect(stopX2 + 300, stopY2 + 100, ButtonWidth2, ButtonHeight2);
 } //End draw
 
-void textBox() {
-  PFont font;
-   font = createFont ("Comicsans", 55);
-  textSize(30);
-  fill(black);
+//void textBox() {
+  //PFont font;
+   //font = createFont ("Comicsans", 55);
+  //textSize(30);
+  //fill(black);
 
-}
+//}
 //
