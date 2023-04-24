@@ -46,6 +46,13 @@ color purple=#A020F0;
  int playX2 = stopX2 + 100;
  //PLay triangle
  
+ //Array
+ int numberOfmp4s = 4;
+ int numberOfeffets = 3;
+ AudioPlayer[] songs = new AudioPlayer [numberOfmp4s]; 
+ AudioPlayer[] soundEffects = new AudioPlayer[numberOfeffets];
+ int currentSong = ( numberOfmp4s - 1 );
+ 
  
  
  
