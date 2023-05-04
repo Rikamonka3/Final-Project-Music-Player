@@ -6,11 +6,29 @@ import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 
 
+PFont font;
+font = createFont ("Comicsans", 55);
+String string1 = "Fuwa Fuwa Time.";
+String string2 = "Angel Beats.";
+String string3 = "Sword Of Justice.";
+
+
 //Global Variables
 //
 //float stopInsdieWidth, stopInsideHeight;
+
+void textCentre() {
+  fill(black);
+  textAlign(CENTER, CENTER);
+  textFont(font);
+  textSize(15);
+}
+
+void textSetup() {}
+
 PImage img;
 void setup() {
+  textSetup();
   loadingMp4s();
   //
   //Illsutrate Garbage Collection of Local Variable
