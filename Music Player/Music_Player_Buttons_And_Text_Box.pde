@@ -5,9 +5,6 @@ import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 
-
-PFont font;
-font = createFont ("Comicsans", 55);
 String string1 = "Fuwa Fuwa Time.";
 String string2 = "Angel Beats.";
 String string3 = "Sword Of Justice.";
@@ -24,11 +21,10 @@ void textCentre() {
   textSize(15);
 }
 
-void textSetup() {}
+
 
 PImage img;
 void setup() {
-  textSetup();
   loadingMp4s();
   //
   //Illsutrate Garbage Collection of Local Variable
@@ -68,15 +64,21 @@ void setup() {
   rect(listX, listY, listWidth + 30, listHeight);
   fill(white);
   rect(listX2, listY2, listWidth2 + 30, listHeight2);
-   fill(white);
-   textSize(20);
-  text("Music Player", 10, 20);
+  // Text Area
+
+fill(white);
+textSize(20);
+text("Music Player", 10, 20);
+fill(black);
+textSize(25);
+text("Fuwa Fuwa Time.mp4, 0/3:50, Tea Time", 150, 120); 
   //Play Button
   fill(black);
   rect(PlayX, PlayY, ButtonWidth, ButtonHeight);
   fill(white);
   rect(playX2, playY2, ButtonWidth2, ButtonHeight2 );
   fill(purple);
+
   //triangle(360, 450, 350, 250 , 250,300 );
   //
   //
